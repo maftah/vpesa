@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include vpesa *.css
+recursive-include vpesa *.csv
+recursive-include vpesa *.html
+recursive-include vpesa *.ico
+recursive-include vpesa *.js
+recursive-include vpesa *.json
+recursive-include vpesa *.md
+recursive-include vpesa *.png
+recursive-include vpesa *.py
+recursive-include vpesa *.svg
+recursive-include vpesa *.txt
+recursive-exclude vpesa *.pyc
