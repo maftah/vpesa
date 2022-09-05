@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "VP.#####",
+ "creation": "2022-09-05 08:45:57.262399",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "muamala_no",
+  "wakala_no",
+  "wakala_type",
+  "muamala_aina",
+  "kiasi"
+ ],
+ "fields": [
+  {
+   "fieldname": "muamala_no",
+   "fieldtype": "Data",
+   "label": "Muamala No",
+   "unique": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "wakala_no",
+   "fieldtype": "Link",
+   "label": "Wakala No",
+   "options": "Wakala Details"
+  },
+  {
+   "fieldname": "wakala_type",
+   "fieldtype": "Data",
+   "label": "Wakala Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "muamala_aina",
+   "fieldtype": "Select",
+   "label": "Muamala Aina",
+   "options": "Kuweka\nKutoa"
+  },
+  {
+   "fieldname": "kiasi",
+   "fieldtype": "Currency",
+   "label": "kiasi"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-09-05 09:05:07.583822",
+ "modified_by": "Administrator",
+ "module": "Vpesa",
+ "name": "Miamala Record",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

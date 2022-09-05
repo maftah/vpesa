@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:wakala_no",
+ "creation": "2022-09-05 08:30:46.519587",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "wakala_name",
+  "wakala_company",
+  "wakala_type",
+  "wakala_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "wakala_company",
+   "fieldtype": "Link",
+   "label": "Wakala Company",
+   "options": "Wakala Company"
+  },
+  {
+   "fieldname": "wakala_type",
+   "fieldtype": "Read Only",
+   "label": "Wakala Type",
+   "options": "wakala_company.wakala_type"
+  },
+  {
+   "fieldname": "wakala_no",
+   "fieldtype": "Data",
+   "label": "Wakala No",
+   "unique": 1
+  },
+  {
+   "fieldname": "wakala_name",
+   "fieldtype": "Data",
+   "label": "Wakala Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-09-05 08:34:27.029039",
+ "modified_by": "Administrator",
+ "module": "Vpesa",
+ "name": "Wakala Details",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
