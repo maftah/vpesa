@@ -41,18 +41,20 @@
   {
    "fieldname": "muamala_aina",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Muamala Aina",
    "options": "Kuweka\nKutoa"
   },
   {
    "fieldname": "kiasi",
    "fieldtype": "Currency",
+   "in_list_view": 1,
    "label": "kiasi"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-05 09:05:07.583822",
+ "modified": "2022-09-05 11:38:49.846147",
  "modified_by": "Administrator",
  "module": "Vpesa",
  "name": "Miamala Record",
@@ -72,5 +74,6 @@
   }
  ],
  "sort_field": "modified",
- "sort_order": "DESC"
+ "sort_order": "DESC",
+ "track_changes": 1
 }
