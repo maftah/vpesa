@@ -13,3 +13,5 @@ frappe.ui.form.on('Miamala Record', {
 		refresh_field(frm.doc.wakala_type);
 	},
 });
+
+cur_frm.add_fetch('wakala_no','wakala_company','wakala_company');

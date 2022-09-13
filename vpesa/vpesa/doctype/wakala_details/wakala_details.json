@@ -16,14 +16,15 @@
   {
    "fieldname": "wakala_company",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Wakala Company",
    "options": "Wakala Company"
   },
   {
    "fieldname": "wakala_type",
-   "fieldtype": "Read Only",
+   "fieldtype": "Data",
    "label": "Wakala Type",
-   "options": "wakala_company.wakala_type"
+   "read_only": 1
   },
   {
    "fieldname": "wakala_no",
@@ -34,12 +35,13 @@
   {
    "fieldname": "wakala_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Wakala Name"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-05 09:31:21.287490",
+ "modified": "2022-09-12 08:09:53.561107",
  "modified_by": "Administrator",
  "module": "Vpesa",
  "name": "Wakala Details",

@@ -19,14 +19,14 @@
   },
   {
    "fieldname": "wakala_type",
-   "fieldtype": "Link",
+   "fieldtype": "Select",
    "label": "Wakala Type",
-   "options": "Wakala Type"
+   "options": "Mobile\nBank"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-05 08:28:35.757462",
+ "modified": "2022-09-12 07:39:01.777637",
  "modified_by": "Administrator",
  "module": "Vpesa",
  "name": "Wakala Company",

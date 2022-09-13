@@ -10,9 +10,10 @@
   "date",
   "muamala_no",
   "wakala_no",
-  "wakala_type",
+  "wakala_company",
   "muamala_aina",
-  "kiasi"
+  "kiasi",
+  "amended_from"
  ],
  "fields": [
   {
@@ -33,12 +34,6 @@
    "options": "Wakala Details"
   },
   {
-   "fieldname": "wakala_type",
-   "fieldtype": "Data",
-   "label": "Wakala Type",
-   "read_only": 1
-  },
-  {
    "fieldname": "muamala_aina",
    "fieldtype": "Select",
    "in_list_view": 1,
@@ -50,11 +45,27 @@
    "fieldtype": "Currency",
    "in_list_view": 1,
    "label": "kiasi"
+  },
+  {
+   "fieldname": "wakala_company",
+   "fieldtype": "Data",
+   "label": "Wakala Company",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Miamala Record",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2022-09-05 11:38:49.846147",
+ "modified": "2022-09-12 08:40:55.148632",
  "modified_by": "Administrator",
  "module": "Vpesa",
  "name": "Miamala Record",

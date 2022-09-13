@@ -24,10 +24,10 @@
   },
   {
    "hidden": 0,
-   "is_query_report": 0,
-   "label": "Wakala Details",
-   "link_to": "Wakala Details",
-   "link_type": "DocType",
+   "is_query_report": 1,
+   "label": "Ripoti ya Miamala",
+   "link_to": "Daily Miamala Report",
+   "link_type": "Report",
    "onboard": 0,
    "type": "Link"
   },
@@ -42,6 +42,15 @@
   {
    "hidden": 0,
    "is_query_report": 0,
+   "label": "Wakala Details",
+   "link_to": "Wakala Details",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
    "label": "Wakala Company",
    "link_to": "Wakala Company",
    "link_type": "DocType",
@@ -51,14 +60,14 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Wakala ",
-   "link_to": "Wakala Type",
+   "label": "Wakala Status",
+   "link_to": "Wakala Status",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
   }
  ],
- "modified": "2022-09-05 09:35:51.517988",
+ "modified": "2022-09-13 08:12:37.963520",
  "modified_by": "Administrator",
  "module": "Vpesa",
  "name": "Vwakala",

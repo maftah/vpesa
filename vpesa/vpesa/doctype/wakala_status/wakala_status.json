@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "WAS.#####",
  "creation": "2022-09-05 08:50:42.157223",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -15,29 +16,35 @@
   {
    "fieldname": "wakala",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Wakala",
-   "options": "Wakala Details"
+   "options": "Wakala Details",
+   "read_only": 1
   },
   {
    "fieldname": "wakala_provider",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Wakala Provider",
    "read_only": 1
   },
   {
    "fieldname": "date",
    "fieldtype": "Date",
-   "label": "Date"
+   "label": "Date",
+   "read_only": 1
   },
   {
    "fieldname": "balance",
    "fieldtype": "Currency",
-   "label": "Balance"
+   "in_list_view": 1,
+   "label": "Balance",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-05 08:50:42.157223",
+ "modified": "2022-09-13 06:50:58.219460",
  "modified_by": "Administrator",
  "module": "Vpesa",
  "name": "Wakala Status",

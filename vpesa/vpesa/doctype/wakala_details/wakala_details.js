@@ -6,3 +6,5 @@ frappe.ui.form.on('Wakala Details', {
 
 	// }
 });
+
+cur_frm.add_fetch('wakala_company','wakala_type','wakala_type');
