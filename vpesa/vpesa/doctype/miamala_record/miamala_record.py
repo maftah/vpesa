@@ -38,7 +38,8 @@ def create_wakala_status(doc):
             "creation_document_no": doc.name,
 			"wakala": doc.wakala_no,
 			"wakala_provider": doc.wakala_company,
-			"balance": doc.kiasi
+			"balance": doc.kiasi,
+			"parent": doc.name
 		},
 	)
 	new_wakala_status.insert(ignore_permissions=True)
@@ -59,7 +60,8 @@ def update_wakala_status(doc):
 		
 	#frappe.throw(frappe.as_json(wakala_status2))
 	wakala_status.update({
-			"balance": balance_value
+			"balance": balance_value,
+			"parent": doc.name
 		},
 	)
 	wakala_status.save()

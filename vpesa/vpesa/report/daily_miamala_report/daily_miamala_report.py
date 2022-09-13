@@ -24,7 +24,8 @@ def execute(filters=None):
 		row['wakala_company'] = d.wakala_company
 		row['muamala_aina'] = d.muamala_aina
 		row['last_updated_on'] = d.modified
-		row['kiasi'] = d.kiasi		
+		row['kiasi'] = d.kiasi
+		row['balance'] = d.balance	
 
 
 		data.append(row)
@@ -65,8 +66,7 @@ def get_column():
 			"label": "Kampuni",
 			"fieldtype": "Data",
 			'width': 150
-		},
-		
+		},		
 		{
 			"fieldname":"kiasi",
 			"label": "Kiasi (Tsh)",
@@ -79,7 +79,12 @@ def get_column():
 			"fieldtype": "Data",
 			'width': 150
 		},
-
+		{
+			"fieldname":"balance",
+			"label": "Balance (Tsh)",
+			"fieldtype": "Currency",
+			'width': 150
+		},
 		{
 			"fieldname":"last_updated_on",
 			"label": "Last Updated On",
@@ -103,11 +108,13 @@ def get_data(filters):
 
 	data = frappe.db.sql("""select ta.name,
 		ta.date, ta.muamala_no, ta.wakala_no, ta.wakala_company, ta.muamala_aina,
-		ta.kiasi, ta.modified
+		ta.kiasi, ta.modified, ts.balance
 		
 		from `tabMiamala Record` ta
+		LEFT JOIN
+			`tabWakala Status` ts ON ta.name = ts.parent
 		where ta.date BETWEEN %(from_date)s AND %(to_date)s
 		AND ta.docstatus !=2
-		order by ta.date
+		order by ta.date ASC
 		"""+ where, where_filter, as_dict=1)
 	return data
