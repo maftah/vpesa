@@ -25,11 +25,9 @@ class MiamalaRecord(Document):
 
 @frappe.whitelist(allow_guest=True)
 def create_wakala_status(doc):
-	# amount = 0
-	# if doc.muamala_aina == "kutoa":
-	# 	amount = flt(amount) + flt(doc.kiasi)
-	# else:
-	# 	amount = flt(amount) - flt(doc.kiasi)
+	# update balance on miamala record for tracking
+	doc.balance = doc.kiasi
+	
 
 
 	new_wakala_status = frappe.new_doc("Wakala Status")
@@ -59,6 +57,12 @@ def update_wakala_status(doc):
 			frappe.throw(_("Hauna salio la kutosha kukamilisha Muamala huu"))
 		
 	#frappe.throw(frappe.as_json(wakala_status2))
+	#update balance on miamala record for tracking 
+	#miamala doc = frappe.get_doc("Miamala Record", )
+	doc.balance = balance_value
+	doc.save()
+
+
 	wakala_status.update({
 			"balance": balance_value,
 			"parent": doc.name

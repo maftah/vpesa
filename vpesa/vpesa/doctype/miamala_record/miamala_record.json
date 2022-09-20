@@ -13,6 +13,7 @@
   "wakala_company",
   "muamala_aina",
   "kiasi",
+  "balance",
   "amended_from"
  ],
  "fields": [
@@ -30,6 +31,7 @@
   {
    "fieldname": "wakala_no",
    "fieldtype": "Link",
+   "in_standard_filter": 1,
    "label": "Wakala No",
    "options": "Wakala Details"
   },
@@ -49,6 +51,7 @@
   {
    "fieldname": "wakala_company",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Wakala Company",
    "read_only": 1
   },
@@ -60,12 +63,19 @@
    "options": "Miamala Record",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "balance",
+   "fieldtype": "Currency",
+   "label": "Balance",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-09-12 08:40:55.148632",
+ "modified": "2022-09-16 02:19:45.015994",
  "modified_by": "Administrator",
  "module": "Vpesa",
  "name": "Miamala Record",

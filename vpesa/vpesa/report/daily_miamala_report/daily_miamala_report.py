@@ -108,11 +108,11 @@ def get_data(filters):
 
 	data = frappe.db.sql("""select ta.name,
 		ta.date, ta.muamala_no, ta.wakala_no, ta.wakala_company, ta.muamala_aina,
-		ta.kiasi, ta.modified, ts.balance
+		ta.kiasi, ta.modified, ta.balance
 		
 		from `tabMiamala Record` ta
 		LEFT JOIN
-			`tabWakala Status` ts ON ta.name = ts.parent
+			`tabWakala Status` ts ON ta.wakala_no = ts.wakala
 		where ta.date BETWEEN %(from_date)s AND %(to_date)s
 		AND ta.docstatus !=2
 		order by ta.date ASC
